@@ -1,0 +1,43 @@
+<%- include("./partials/header")%>
+
+    <div class="form">
+        <% if (locals.contents && locals.contents.length > 0) { %>
+            <% for (var i = 0; i < contents.length; i++) {%>
+                <div class="card">
+                    <div class="title">
+                        <h1><%=contents[i].title%></h1>
+                        <hr>
+                    </div>
+    
+                    <div class="content">
+                        <p><%=contents[i].blogContent%></p>
+                    </div>
+    
+            
+                    <div class="info">
+                        <strong>Author Info: </strong> <br>
+                        <%= contents[i].firstName %> <%= contents[i].lastName %> <br>
+                        <%= contents[i].email %> |
+                        <%= contents[i].phoneNumber %> 
+                    </div> 
+
+                    <form class="deleteButton" action="/delete/<%= i %>" method="POST">
+                        <div class="delete-button">
+                            <button class="delete" type="submit">Delete</button>
+                        </div>
+                    </form> 
+                </div>
+            <% } %>
+        <% } else {%>
+             <h1>No content to be displayed. Create a content first!</h1>
+        <% } %>
+        
+    </div>
+
+    <script>
+
+    </script>
+
+
+
+<%- include("./partials/footer")%>

@@ -1,0 +1,28 @@
+.form{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: rgb(91, 91, 243);
+    border: 5px solid;
+    padding: 10px 20px;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center; 
+}
+
+.delete{
+    background-color: #fefefe;
+    color: black;
+    font-size: 0.9rem;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 13px;
+}

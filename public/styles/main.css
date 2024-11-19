@@ -1,0 +1,64 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+main {
+    text-align: center;
+    padding: 5vmin;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%; 
+}
+
+.welcome{
+    font-family: "Inter", sans-serif;
+    font-size: large;
+    font-weight: regular;
+    font-style: normal;
+    margin: 0 auto;
+    padding-bottom: .75em;
+}
+
+.name{
+    font-size: xx-large;
+    font-style: normal;
+    margin: 0 auto;
+    padding-bottom: .75em;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.bars{
+    display: flex;
+    justify-content: space-around;
+    background-color: blue;
+    padding: 20px 20px;
+    border-bottom: solid 5px;
+}
+
+.bar-items{
+    border-radius: 32px;
+    background-color: rgb(253, 253, 253);
+    border: none;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}

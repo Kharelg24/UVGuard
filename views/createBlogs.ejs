@@ -1,0 +1,46 @@
+<%- include("./partials/header")%>
+
+<form class="blogForm" action="/submit" method="POST">
+    <div class="firstname">
+        <label for="firstName"> First Name*</label>
+        <input type="text" name="firstName" placeholder="First name" required>
+    </div>
+
+    <div class="lastName">
+        <label for="lastName"> Last Name*</label>
+        <input type="text" name="lastName" placeholder="Last name" required>
+    </div>
+
+    <div class="email">
+        <label for="email"> Email*</label>
+        <input type="text" name="email" placeholder="grizzy@bear.com" required>
+    </div>
+
+    <div class="phoneNumber">
+        <label for="phoneNumber"> Phone Number</label>
+        <input type="text" name="phoneNumber" placeholder="123-456-7890">
+    </div>
+
+    <div class="title">
+        <label for="title"> Title*</label>
+        <input type="text" name="title" placeholder="Title" required>
+    </div>
+
+    <div class="blogContent">
+        <label for="blogContent">Content*</label>
+        <textarea name="blogContent" placeholder="Enter your blog content" required></textarea>
+    </div>
+
+    <div class="button">
+        <button class="button" type="submit" value="Submit">Submit Blog</button>
+    </div>
+
+</form>
+
+<script>
+    var form = document.querySelector(".blogForm");
+    
+    form.addEventListener('submit', function (){
+        alert("Your content has sucessfully been submitted!");
+    });
+</script>
